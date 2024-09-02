@@ -1,0 +1,90 @@
+body {
+    color: black;
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    /* Moved background color to CSS */
+}
+
+h1 {
+    background-color: skyblue;
+    text-align: center;
+    color: black;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    /* Remove bullet points */
+}
+
+li {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li:hover {
+    background-color: skyblue;
+}
+
+.price{
+    text-overflow: ellipsis;
+}
+
+.zero,
+.doublezero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.one,
+.two {
+    border: 2px solid black;    
+    margin: 10px;
+    width: 200px;
+    justify-content: space-around;
+    flex-basis: calc(25% - 20px);
+    /* Four items per row */
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.one img,
+.two img {
+    margin-top: 20px;
+}
+
+button {
+    font-size: medium;
+    color: white;
+    background-color: red;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .one,
+    .two {
+        flex-basis: calc(50% - 80px);
+        /* Two items per row on smaller screens */
+    }
+}
+
+/* Mobile design */
+@media (max-width: 480px) {
+    .one,
+    .two {
+        flex-basis: calc(50% - 80px);
+        /* Two items per row on mobile devices */
+    }
+}

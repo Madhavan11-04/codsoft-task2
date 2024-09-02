@@ -1,0 +1,82 @@
+
+<br>
+<br>
+<a href="index.html">HOME</a>
+<h1>DESSERTS</h1>
+    <br>
+    <section class="triplezero">
+        <div class="three">
+            <img src="panna cotta.jpeg" >
+            <p>PANNA COTTA -PRICE:75</p>
+            <p>Silky, creamy Italian dessert made from sweetened cream, often served with fruit or caramel sauce</p>
+            <button > ORDER NOW</button>
+        </div>
+        <div class="three">
+            <img src="cherrydelight.jpeg" >
+            <p>CHERRY DELIGHT -PRICE:80</p>
+            <p>Sweet and tangy treat featuring luscious cherries, creating a burst of flavor in every delightful bite.</p>
+            <button>ORDER NOW</button>       
+        </div>
+        <div class="three">
+            <img src="Italiandelight.jpeg" >
+            <p>ITALIAN DELIGHT -PRICE:55</p>
+            <p>Classic Italian dessert, combining rich flavors and textures, perfect for indulging in a sweet culinary experience.</p>
+            <button>ORDER NOW</button>
+        </div>
+        <div class="three">
+            <img src="cupcakes.jpeg" >
+            <p>CUPCAKES -PRICE:40</p>
+            <p>Small, individual cakes with various flavors and toppings, offering a delightful and portable sweet treat.</p>
+            <button>ORDER NOW</button>        
+        </div>
+    </section>
+    <style>
+        h1 {
+        background-color: skyblue;
+        text-align: center;
+        color: black;
+        }
+        .triplezero{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .three{
+        border: 2px solid black;	
+	margin: 10px;
+	width: 200px;
+	justify-content: space-around;
+	flex-basis: 30%;
+    flex-basis: calc(25% - 20px);
+    /* Four items per row */
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    }
+            
+    .three img{
+        margin-top: 20px;
+    }
+    button {
+        font-size: medium;
+        color: white;
+        background-color: red;
+    }
+    
+    @media (max-width: 768px) {
+    .three{
+        flex-basis: calc(50% - 80px);
+        /* Two items per row on smaller screens */
+    }
+}
+
+/* Mobile design */
+@media (max-width: 480px) {
+   .three{
+              flex-basis: calc(50% - 80px);
+        /* Two items per row on mobile devices */
+    }
+}
+
+    </style>
